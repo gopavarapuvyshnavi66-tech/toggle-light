@@ -1,0 +1,39 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="hide_show.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script>
+            $(document).ready(function(){
+            $("#btn1").click(function(){
+            $("#img1").hide();
+            $("#img1").show().attr("src","https://www.shutterstock.com/shutterstock/videos/345499/thumb/6.jpg?ip=x480");
+            $("#btn2").css("background-color","green");
+            $("#btn1").css("background-color","grey");
+            $("#background").css("background-color","black");
+            });
+            $("#btn2").click(function(){
+            $("#img1").hide();
+            $("#img1").show().attr("src","https://www.shutterstock.com/shutterstock/videos/41843/thumb/1.jpg?ip=x480");
+            $("#btn1").css("background-color","red");
+            $("#btn2").css("background-color","grey");
+            $("#background").css("background-color","white");
+            
+
+            });
+            
+            });
+         </script>
+    </head>
+    <body id="background" class="body">
+        <div class="center">
+            <div>
+             <img src="https://www.shutterstock.com/shutterstock/videos/345499/thumb/6.jpg?ip=x480" id="img1" class="img">
+             
+             </div>
+             <div>
+             <button id="btn1">OFF</button>
+             <button id="btn2">ON</button>
+             </div>
+        </div>
+    </body>
+</html>
